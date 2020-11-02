@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title> Survey form</title>
+    <link href="Surveycss.css" rel="stylesheet" type="text/css">
+</head>
+<main id="main">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <body>
+    <h1 id="title"> Marian Survey</h1>
+
+    <p id="description">This is a survey made by Marian</p>
+
+    <form id="survey-form" action="">
+
+        <label for="name" id="name-label">Name</label>
+        <input 
+        id="name" 
+        type="text" 
+        placeholder="Insert your name" 
+        required>  
+        <br>
+
+        <label for="email" id="email-label">Email</label>
+        <input 
+        id="email" 
+        type="email"
+        placeholder="Insert your email" 
+        required>
+        <br>
+
+        <label for="number-label" id="number-label">Number</label>
+        <input 
+        id="number" 
+        type="number" 
+        placeholder="Insert a number" 
+        required 
+        min="1" 
+        max="10">
+        <br>
+
+        <label for="dropdown" id="dropdown-label">Dropdown</label>
+        <select 
+        id="dropdown" 
+        name="options">
+            <option value="option1"> option1</option>
+            <option value="option2"> option2</option>
+        </select><br>
+
+        <label for="male"> Male</label>
+        <input 
+        id="male" 
+        type="radio" 
+        name="gender" 
+        value="male">
+
+        <label for="female"> Female</label>
+        <input 
+        id="female" 
+        type="radio" 
+        name="gender" 
+        value="female">
+
+        <label for="other"> Other</label>
+        <input 
+        id="other" 
+        type="radio" 
+        name="gender" 
+        value="other"><br>
+        <div class="center__box">
+        <label for="Genius"></label>
+        <input 
+        id="Genius" 
+        type="checkbox" 
+        name="traits" 
+        value="Genius">Genius<br>
+        
+        <label for="Intelligent"></label>
+        <input 
+        id="Intelligent" 
+        type="checkbox" 
+        name="traits" 
+        value="Intelligent">Intelligent<br>
+
+        <label for="Quick"></label>
+        <input 
+        id="Quick" 
+        type="checkbox" 
+        name="traits" 
+        value="Quick">Quick<br>
+        </div>
+        <label for="text-area" id="text-area">Submit your comments!</label><br>
+        <textarea 
+        id="comments" 
+        type="text" 
+        placeholder="Enter your comments here!">
+        </textarea><br>
+
+        <div>
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+
+
+        </form>
+    </body>
+</main>
+</html>
